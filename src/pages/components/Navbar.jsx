@@ -1,8 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import { GoCopilot } from "react-icons/go";
+import useAuthContext from "../../hooks/useAuthContext";
 
 const Navbar = () => {
-  const user = true;
+  const {user} = useAuthContext();
   const navList = (
     <>
       <NavLink to="/">
@@ -143,7 +144,7 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <Link className={"py-1 px-4 font-bold bg-[#A8CA73]"} to={"/login"}>
+            <Link className={"py-1 px-4 font-bold nbtn"} to={"/login"}>
               Login
             </Link>
           )}

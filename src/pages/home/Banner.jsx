@@ -17,7 +17,7 @@ const Banner = () => {
             efficiency. Stay in control of your tasks effortlessly.
           </p>
           <Link to={"dashboard"}>
-            <button className="btn border-none p-4 text-[#ffff] font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <button className="btn border-none p-4 text-[#ffff] font-bold nbtn">
               Let’s Explore
             </button>
           </Link>
