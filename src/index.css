@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav_item::after,
+.nav_item_active::after {
+  @apply block h-[3px] bg-primary  content-[''] transition-all duration-300 rounded-full mx-auto;
+}
+
+.nav_item::after {
+  @apply w-0 hover:w-full;
+}
+
+.nav_item_active::after {
+  @apply w-full;
+}
