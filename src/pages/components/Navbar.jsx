@@ -32,7 +32,7 @@ const Navbar = () => {
   const handleLogOut = () => {};
 
   return (
-    <div className="fixed z-[3] py-1 top-0 left-0 right-0 border-b-2">
+    <div className="border-b-2">
       <div className={`navbar max-w-7xl mx-auto`}>
         <div className="navbar-start">
           <Link className="flex items-center text-xl" to={"/"}>
