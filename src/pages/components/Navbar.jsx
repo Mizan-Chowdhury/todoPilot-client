@@ -3,7 +3,7 @@ import { GoCopilot } from "react-icons/go";
 import useAuthContext from "../../hooks/useAuthContext";
 
 const Navbar = () => {
-  const {user} = useAuthContext();
+  const { user,logOutUser } = useAuthContext();
   const navList = (
     <>
       <NavLink to="/">
@@ -30,7 +30,9 @@ const Navbar = () => {
     </>
   );
 
-  const handleLogOut = () => {};
+  const handleLogOut = () => {
+    logOutUser();
+  };
 
   return (
     <div className="border-b-2">
